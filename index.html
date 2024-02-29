@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing web</title>    
+    <style>
+        body{
+        background-color:#141414;
+        /* margin: 0;
+        top: 0; */
+        color: var(--text-color);
+        font-size: 1.4em;
+        font-family:sans-serif;
+        }
+        span{
+            color: var(--text-color);
+            font-size: 2em;
+        }
+        :root {
+            --text-color:white;
+            --bg-color:rgb(58, 58, 58);
+        }
+        .buttons{
+            font-size: 1.7em;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <span class="playerMove">You</span><span> vs</span><span class="cpuMove"> Cpu</span>
+    
+    <br>
+    <Span>Result: </Span><span class="showResult"></span>
+    <br>
+    <button onclick="rockPick()" class="buttons">Rock</button>
+    <button onclick="scissorPick()" class="buttons">Scissor</button>
+    <button onclick="paperPick()" class="buttons">Paper</button>
+    <br>
+    <span class="playerScore">Your score: </span>
+</body>
+</html>
